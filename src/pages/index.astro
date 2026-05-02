@@ -2,6 +2,29 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Home">
-  <button class="btn btn-primary">Test DaisyUI</button>
+<Layout title="Ready to build">
+  <div class="min-h-screen flex items-center justify-center p-8">
+    <div class="card w-full max-w-lg bg-base-200 shadow-xl">
+      <div class="card-body gap-4">
+        <h1 class="card-title text-2xl">Your site is ready</h1>
+        <p class="text-base-content/70">Stack confirmed working:</p>
+        <ul class="list-none space-y-1 text-sm">
+          <li>✓ Astro</li>
+          <li>✓ Tailwind CSS v4</li>
+          <li>✓ DaisyUI v5</li>
+          <li>✓ Supabase client</li>
+        </ul>
+        <div class="divider"></div>
+        <p class="text-sm text-base-content/70">Next steps:</p>
+        <ol class="list-decimal list-inside space-y-1 text-sm">
+          <li>Add your tables in Supabase</li>
+          <li>Tell Claude Code what you want to build</li>
+          <li>Before deploying, add <code class="kbd kbd-sm">PUBLIC_SITE_URL</code>, <code class="kbd kbd-sm">PUBLIC_SUPABASE_URL</code>, and <code class="kbd kbd-sm">PUBLIC_SUPABASE_ANON_KEY</code> to Cloudflare Pages environment variables</li>
+        </ol>
+        <div class="card-actions justify-end mt-2">
+          <a href="https://github.com/joshuahardwick/astro-pseo-starter" class="btn btn-primary btn-sm">View docs</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
